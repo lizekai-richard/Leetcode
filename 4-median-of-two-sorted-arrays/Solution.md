@@ -12,3 +12,4 @@ Now let me explain this condition. Since both arrays are sorted, we know that $L
 
 Last but not the least, if $n+m$ is even, then the median should be determined by the average of $\max\{LA,LB\}$ and $\min \{RA,RB\}$. Otherwise, the median is $\max \{LA, LB\}$. 
 
+![image-20220810225512654](./img.png)
