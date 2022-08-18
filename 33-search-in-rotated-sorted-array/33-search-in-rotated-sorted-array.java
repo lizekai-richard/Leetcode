@@ -2,12 +2,12 @@ class Solution {
     public int findPivot(int[] nums) {
         int l = 0, r = nums.length - 1;
         if (nums[l] <= nums[r]) {
-            return 0;
+            return -1;
         }
         while (l <= r) {
             int mid = (l + r) / 2;
             if (nums[mid] > nums[mid + 1]) {
-                return mid + 1;
+                return mid;
             } else if (nums[mid] < nums[l]) {
                 r = mid - 1;
             } else {
@@ -34,12 +34,12 @@ class Solution {
         
         int pivot = findPivot(nums);
         System.out.println(pivot);
-        if (pivot == 0) {
+        if (pivot == -1) {
             return findAnswer(nums, 0, nums.length - 1, target);
         } else if (target >= nums[0]) {
-            return findAnswer(nums, 0, pivot - 1, target);
+            return findAnswer(nums, 0, pivot, target);
         } else {
-            return findAnswer(nums, pivot, nums.length - 1, target);
+            return findAnswer(nums, pivot + 1, nums.length - 1, target);
         }
         
     }
