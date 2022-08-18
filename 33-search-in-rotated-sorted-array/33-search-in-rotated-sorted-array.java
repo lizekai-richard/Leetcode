@@ -37,7 +37,7 @@ class Solution {
         if (pivot == 0) {
             return findAnswer(nums, 0, nums.length - 1, target);
         } else if (target >= nums[0]) {
-            return findAnswer(nums, 0, pivot, target);
+            return findAnswer(nums, 0, pivot - 1, target);
         } else {
             return findAnswer(nums, pivot, nums.length - 1, target);
         }
