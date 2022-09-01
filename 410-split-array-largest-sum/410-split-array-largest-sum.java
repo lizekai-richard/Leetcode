@@ -4,6 +4,7 @@ class Solution {
         int pointer = 0;
         int currentSum = 0;
         while (pointer < nums.length) {
+            // don't forget this edge case
             if (nums[pointer] > sum) {
                 return false;
             }
