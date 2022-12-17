@@ -14,11 +14,10 @@ class Solution {
             int earliestFreeRoom = rooms.peek();
             if (earliestFreeRoom <= intervals[i][0]) {
                 rooms.poll();
-                rooms.add(intervals[i][1]);
             } else {
                 numRooms += 1;
-                rooms.add(intervals[i][1]);
             }
+            rooms.add(intervals[i][1]);
         }
         return numRooms;
     }
