@@ -1,4 +1,4 @@
-class Solution {
+class MeetingRooms {
     public int minMeetingRooms(int[][] intervals) {
         Arrays.sort(intervals, new Comparator<>(){
             @Override

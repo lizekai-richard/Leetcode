@@ -1,4 +1,4 @@
-class Solution {
+class MergeIntervals {
     
     public int[][] merge(int[][] intervals) {
         List<int[]> mergedIntervals = new ArrayList<>();

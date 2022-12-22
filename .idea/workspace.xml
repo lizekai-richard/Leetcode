@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/template/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0056-merge-intervals/0056-merge-intervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/0056-merge-intervals/0056-merge-intervals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java" beforeDir="false" afterPath="$PROJECT_DIR$/0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0253-meeting-rooms-ii/0253-meeting-rooms-ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/0253-meeting-rooms-ii/0253-meeting-rooms-ii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0363-max-sum-of-rectangle-no-larger-than-k/0363-max-sum-of-rectangle-no-larger-than-k.java" beforeDir="false" afterPath="$PROJECT_DIR$/0363-max-sum-of-rectangle-no-larger-than-k/0363-max-sum-of-rectangle-no-larger-than-k.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0718-maximum-length-of-repeated-subarray/0718-maximum-length-of-repeated-subarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/0718-maximum-length-of-repeated-subarray/0718-maximum-length-of-repeated-subarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13-roman-to-integer/13-roman-to-integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-roman-to-integer/13-roman-to-integer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14-longest-common-prefix/14-longest-common-prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/14-longest-common-prefix/14-longest-common-prefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1937-maximum-number-of-points-with-cost/1937-maximum-number-of-points-with-cost.java" beforeDir="false" afterPath="$PROJECT_DIR$/1937-maximum-number-of-points-with-cost/1937-maximum-number-of-points-with-cost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/269-alien-dictionary/269-alien-dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/269-alien-dictionary/269-alien-dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/272-closest-binary-search-tree-value-ii/272-closest-binary-search-tree-value-ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/272-closest-binary-search-tree-value-ii/272-closest-binary-search-tree-value-ii.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/33-search-in-rotated-sorted-array/33-search-in-rotated-sorted-array.java" beforeDir="false" afterPath="$PROJECT_DIR$/33-search-in-rotated-sorted-array/33-search-in-rotated-sorted-array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-median-of-two-sorted-arrays/4-median-of-two-sorted-arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/4-median-of-two-sorted-arrays/4-median-of-two-sorted-arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/410-split-array-largest-sum/410-split-array-largest-sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/410-split-array-largest-sum/410-split-array-largest-sum.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E9IPUDFtGRNXWBWzn0xSkUS0Lm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zekaili/Documents/Leetcode&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4-median-of-two-sorted-arrays" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Leetcode" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="" />
+      <created>1662001349506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662001349506</updated>
+      <workItem from="1662001351800" duration="399000" />
+      <workItem from="1670462025678" duration="76000" />
+      <workItem from="1670462105444" duration="974000" />
+      <workItem from="1670478040827" duration="21000" />
+      <workItem from="1670816141144" duration="269000" />
+      <workItem from="1670823750465" duration="46000" />
+      <workItem from="1671606207537" duration="10000" />
+      <workItem from="1671679048701" duration="1884000" />
+      <workItem from="1671680947829" duration="37000" />
+      <workItem from="1671680987276" duration="1517000" />
+      <workItem from="1671682513410" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

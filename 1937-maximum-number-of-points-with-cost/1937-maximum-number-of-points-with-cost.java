@@ -1,4 +1,4 @@
-class Solution {
+class MaximumNumberOfPointsWithCost {
 
     public long maxPoints(int[][] points) {
         int n = points.length;

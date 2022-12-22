@@ -1,4 +1,4 @@
-public class Solution {
+public class AlienDictionary {
     public boolean dfs(int node, int n, int[][] adjMatrix, HashMap<Integer, Boolean> visited, StringBuilder s,
                     HashMap<Integer, Character> indexToChar) {
         if (visited.containsKey(node)) {

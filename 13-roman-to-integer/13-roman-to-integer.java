@@ -1,4 +1,6 @@
-class Solution {
+import java.util.HashMap;
+
+class RomanToInteger {
     public void fillRomanToIntegerDict(HashMap<Character, Integer> dict) {
         dict.put('I', 1);
         dict.put('V', 5);

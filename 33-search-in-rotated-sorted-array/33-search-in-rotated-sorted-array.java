@@ -1,4 +1,4 @@
-class Solution {
+class SearchInRotatedSortedArray {
     public int findPivot(int[] nums) {
         int l = 0, r = nums.length - 1;
         if (nums[l] <= nums[r]) {

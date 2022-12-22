@@ -1,4 +1,4 @@
-class Solution {
+class MaxSumOfRectangleNoLargerThanK {
     private int answer = Integer.MIN_VALUE;
 
     private void updateAnswer(int[] rowSum, int k) {

@@ -1,4 +1,4 @@
-class Solution {
+class SplitArrayLargestSum {
     public boolean check(int sum, int m, int[] nums) {
         int numIntervals = 1;
         int pointer = 0;

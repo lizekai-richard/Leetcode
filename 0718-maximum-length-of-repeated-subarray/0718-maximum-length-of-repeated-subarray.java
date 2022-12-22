@@ -1,4 +1,4 @@
-class Solution {
+class MaximumLengthOfRepeatedSubarray {
     // DP solution
     public int findLength(int[] nums1, int[] nums2) {
         int n = nums1.length;
