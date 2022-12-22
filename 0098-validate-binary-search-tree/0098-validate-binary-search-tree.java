@@ -37,14 +37,6 @@ class Solution {
         return true;
     }
     public boolean isValidBST(TreeNode root) {
-        // boolean isValid = true;
-        // if (root.left != null) {
-        //     isValid = isValid && (root.val > root.left.val && isValidBST(root.left));
-        // }
-        // if (root.right != null) {
-        //     isValid = isValid && (root.val < root.right.val && isValidBST(root.right));
-        // }
-        // return isValid;
         inOrderTraversal(root);
         return check();
     }
