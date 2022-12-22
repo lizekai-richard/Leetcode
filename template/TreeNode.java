@@ -1,18 +1,20 @@
+import java.util.ArrayList;
+
 /**
  * Definition of a binary search tree
  * @param <S> the type of key
  * @param <T> the type of value
  */
-public class TreeNode<S, T> {
+public class TreeNode<S extends Comparable<S>, T> {
     private TreeNode<S, T> leftTree = null;
     private TreeNode<S, T> rightTree = null;
     private TreeNode<S, T> parentTree = null;
     private S key;
     private T value;
 
-    private ArrayList<S> inOrderTraversal = new ArrayList<>();
+    private final ArrayList<S> inOrderTraversal = new ArrayList<>();
 
-    public TreeNode<S, T>(S key, T value, TreeNode<S, T> parent) {
+    public TreeNode (S key, T value, TreeNode<S, T> parent) {
         this.key = key;
         this.value = value;
         this.parentTree = parent;
@@ -61,7 +63,7 @@ public class TreeNode<S, T> {
             return this;
         }
 
-        if (key < this.key) {
+        if (key.compareTo(this.key) < 0) {
             if (leftTree != null) {
                 return leftTree.search(key);
             } else {
@@ -82,7 +84,7 @@ public class TreeNode<S, T> {
      * Inserts a new node
      */
     public void insert(S key, T value) {
-        if (key < this.key) {
+        if (key.compareTo(this.key) < 0) {
             if (leftTree != null) {
                 leftTree.insert(key, value);
             } else {
@@ -167,10 +169,11 @@ public class TreeNode<S, T> {
     public void delete() {
         if (leftTree == null && rightTree == null) {
             deleteNoChild(this);
-        } else if (targetNode.leftTree != null || targetNode.rightTree != null) {
+        } else if (leftTree != null || rightTree != null) {
             deleteOneChild(this);
         } else {
             deleteTwoChild(this);
         }
     }
+
 }

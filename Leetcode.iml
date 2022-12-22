@@ -3,11 +3,22 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/0056-merge-intervals" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0215-kth-largest-element-in-an-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0253-meeting-rooms-ii" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0347-top-k-frequent-elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0363-max-sum-of-rectangle-no-larger-than-k" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0718-maximum-length-of-repeated-subarray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0973-k-closest-points-to-origin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/13-roman-to-integer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/14-longest-common-prefix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1937-maximum-number-of-points-with-cost" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/269-alien-dictionary" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/272-closest-binary-search-tree-value-ii" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/33-search-in-rotated-sorted-array" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4-median-of-two-sorted-arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/410-split-array-largest-sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/template" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

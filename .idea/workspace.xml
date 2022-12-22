@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/template/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0056-merge-intervals/0056-merge-intervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/0056-merge-intervals/0056-merge-intervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java" beforeDir="false" afterPath="$PROJECT_DIR$/0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0253-meeting-rooms-ii/0253-meeting-rooms-ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/0253-meeting-rooms-ii/0253-meeting-rooms-ii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0363-max-sum-of-rectangle-no-larger-than-k/0363-max-sum-of-rectangle-no-larger-than-k.java" beforeDir="false" afterPath="$PROJECT_DIR$/0363-max-sum-of-rectangle-no-larger-than-k/0363-max-sum-of-rectangle-no-larger-than-k.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0718-maximum-length-of-repeated-subarray/0718-maximum-length-of-repeated-subarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/0718-maximum-length-of-repeated-subarray/0718-maximum-length-of-repeated-subarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-roman-to-integer/13-roman-to-integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-roman-to-integer/13-roman-to-integer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14-longest-common-prefix/14-longest-common-prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/14-longest-common-prefix/14-longest-common-prefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1937-maximum-number-of-points-with-cost/1937-maximum-number-of-points-with-cost.java" beforeDir="false" afterPath="$PROJECT_DIR$/1937-maximum-number-of-points-with-cost/1937-maximum-number-of-points-with-cost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/269-alien-dictionary/269-alien-dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/269-alien-dictionary/269-alien-dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/272-closest-binary-search-tree-value-ii/272-closest-binary-search-tree-value-ii.java" beforeDir="false" afterPath="$PROJECT_DIR$/272-closest-binary-search-tree-value-ii/272-closest-binary-search-tree-value-ii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/33-search-in-rotated-sorted-array/33-search-in-rotated-sorted-array.java" beforeDir="false" afterPath="$PROJECT_DIR$/33-search-in-rotated-sorted-array/33-search-in-rotated-sorted-array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4-median-of-two-sorted-arrays/4-median-of-two-sorted-arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/4-median-of-two-sorted-arrays/4-median-of-two-sorted-arrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/410-split-array-largest-sum/410-split-array-largest-sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/410-split-array-largest-sum/410-split-array-largest-sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/template/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zekaili/Documents/Leetcode&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "zulu-11",
+    "last_opened_file_path": "/Users/zekaili/Documents/Leetcode",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/4-median-of-two-sorted-arrays" />
@@ -95,6 +85,9 @@
       <workItem from="1671680947829" duration="37000" />
       <workItem from="1671680987276" duration="1517000" />
       <workItem from="1671682513410" duration="9000" />
+      <workItem from="1671689594437" duration="13000" />
+      <workItem from="1671689625556" duration="16000" />
+      <workItem from="1671689684887" duration="598000" />
     </task>
     <servers />
   </component>
