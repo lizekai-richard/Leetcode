@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/template/TreeNode.java" afterDir="false" />
-    </list>
+    <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +66,7 @@
       <workItem from="1671689594437" duration="13000" />
       <workItem from="1671689625556" duration="16000" />
       <workItem from="1671689684887" duration="598000" />
+      <workItem from="1671935247518" duration="655000" />
     </task>
     <servers />
   </component>
