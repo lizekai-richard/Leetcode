@@ -10,15 +10,16 @@ class Solution {
         
         Arrays.fill(moneyRobbed, 0);
         moneyRobbed[0] = nums[0];
-        moneyRobbed[1] = nums[1];
+        moneyRobbed[1] = Math.max(nums[0], nums[1]);
         for (int i = 2; i < n; ++i) {
-            for (int j = 0; j < i; ++j) {
-                if (i - j > 1) {
-                    moneyRobbed[i] = Math.max(moneyRobbed[i], moneyRobbed[j] 
-                                              + nums[i]);
-                }
-            }
+            // for (int j = 0; j < i; ++j) {
+            //     if (i - j > 1) {
+            //         moneyRobbed[i] = Math.max(moneyRobbed[i], moneyRobbed[j] 
+            //                                   + nums[i]);
+            //     }
+            // }
+            moneyRobbed[i] = Math.max(moneyRobbed[i - 1], moneyRobbed[i - 2] + nums[i]);
         }
-        return Math.max(moneyRobbed[n - 1], moneyRobbed[n - 2]);
+        return moneyRobbed[n - 1];
     }
 }
