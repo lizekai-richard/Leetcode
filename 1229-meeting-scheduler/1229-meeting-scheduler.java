@@ -46,7 +46,9 @@ class Solution {
         while (p1 < n && p2 < m) {
             int res = compareSlot(slots1[p1], slots2[p2]);
             if (res == 2) {
-                int[] intersection = getIntersection(slots1[p1], slots2[p2]);
+                //int[] intersection = getIntersection(slots1[p1], slots2[p2]);
+                int[] intersection = new int[]{Math.max(slots1[p1][0], slots2[p2][0]),
+                                              Math.min(slots1[p1][1], slots2[p2][1])};
                 if (intersection[1] - intersection[0] >= duration) {
                     return Arrays.asList(new Integer[]{intersection[0], intersection[0] + duration});
                 } else {
