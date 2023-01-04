@@ -39,7 +39,7 @@ class Solution {
     }
 
     private void binarySearch() {
-        int l = minSweetness, r = sum;
+        int l = minSweetness, r = sum / (k + 1);
         while (l <= r) {
             int mid = (l + r) >> 1;
             if (check(mid)) {
