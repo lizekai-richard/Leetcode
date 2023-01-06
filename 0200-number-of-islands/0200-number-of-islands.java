@@ -12,12 +12,11 @@ class Solution {
             int newX = x + dx[i];
             int newY = y + dy[i];
             if (newX >= 0 && newY >= 0 && newX < m && newY < n) {
-                if (grid[newX][newY] == '1') {
-                    grid[newX][newY] = '0';
+                if (grid[newX][newY] == '1' && !visited[newX][newY]) {
+                    visited[newX][newY] = true;
                     dfs(newX, newY);
                 }
             }
-            
         }
     }
     public int numIslands(char[][] grid) {
@@ -32,7 +31,7 @@ class Solution {
         
         for (int x = 0; x < m; ++x) {
             for (int y = 0; y < n; ++y) {
-                if(grid[x][y] == '1') {
+                if(grid[x][y] == '1' && !visited[x][y]) {
                     dfs(x, y);
                     numIslands++;
                 }
