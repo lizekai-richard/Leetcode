@@ -19,7 +19,7 @@ public void partition(nums, left, right, pIndex) {
 }
 ```
 
-`storeIndex` represents the smallest index that satisfies `nums[index] > pivot`. Every time we encounter an element that is smaller than the pivot, we swap that index with `storeIndex` and increase the `storeIndex` by 1. By doing so, we can move all elements that are smaller than the pivot to the left.
+`storeIndex` represents the correct position of the `pivot`. Every time we encounter an element that is smaller than the pivot, we swap that index with `storeIndex` and increase the `storeIndex` by 1. By doing so, we can move all elements that are smaller than the pivot to the left.
 
 
 
