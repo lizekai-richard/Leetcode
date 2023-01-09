@@ -23,7 +23,7 @@ class Solution {
             }
         }
         checked[node] = true;
-        path[node] = true;
+        path[node] = false;
         return res;
     }
     
