@@ -34,7 +34,15 @@ class Solution {
         return true;
     }
     public String validIPAddress(String queryIP) {
-        if (queryIP.length() == 0 || queryIP.charAt(0) == '.' || queryIP.charAt(0) == ':' || queryIP.charAt(queryIP.length() - 1) == '.' || queryIP.charAt(queryIP.length() - 1) == ':') {
+        if (queryIP.length() == 0) {
+            return "Neither";
+        } if(queryIP.charAt(0) == '.') {
+            return "Neither";
+        } if(queryIP.charAt(0) == ':') {
+            return "Neither";
+        } if(queryIP.charAt(queryIP.length() - 1) == '.') {
+            return "Neither";
+        } if(queryIP.charAt(queryIP.length() - 1) == ':') {
             return "Neither";
         }
         String[] xs = queryIP.split("[.]");
