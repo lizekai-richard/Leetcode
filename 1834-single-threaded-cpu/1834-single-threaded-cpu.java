@@ -17,6 +17,7 @@ class MPair<S extends Comparable<S>, T extends Comparable<T> > implements Compar
         value.compareTo(p.getValue());
     }
 }
+
 class Solution {
     public int[] getOrder(int[][] tasks) {
         Pair<Integer, int[]>[] tasksWithId = new Pair[tasks.length];
@@ -25,13 +26,15 @@ class Solution {
         }
         Arrays.sort(tasksWithId, (t1, t2) -> t1.getValue()[0] - t2.getValue()[0]
                 == 0 ? t1.getValue()[1] - t2.getValue()[1] : t1.getValue()[0] - t2.getValue()[0]);
+        
+        
         PriorityQueue<MPair<Integer, Integer>> pq = new PriorityQueue<>();
         int[] order = new int[tasks.length];
         
         int j = 1;
-        // pq.add(new MPair<Integer, Integer>(tasksWithId[0].getKey(), tasksWithId[0].getValue()[1]));
         int time = tasksWithId[0].getValue()[0] + tasksWithId[0].getValue()[1];
         order[0] = tasksWithId[0].getKey();
+        
         for (int i = 1; i < tasks.length; ++i) {
             while(j < tasks.length && tasksWithId[j].getValue()[0] <= time) {
                 pq.add(new MPair<Integer, Integer>(tasksWithId[j].getKey(), tasksWithId[j].getValue()[1]));
