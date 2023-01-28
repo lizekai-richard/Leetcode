@@ -47,6 +47,14 @@ public class LRUCache {
         tail.setPrev(head);
     }
 
+    public void addToTail(DLLNode node) {
+        DLLNode lastNode = tail.prev;
+        lastNode.setNext(node);
+        node.setPrev(lastNode);
+        node.setNext(tail);
+        tail.setPrev(node);
+    }
+
     public void updateDLL(DLLNode node) {
         if (node.equals(head)) {
             if (numOfNode > 1) {
@@ -58,12 +66,7 @@ public class LRUCache {
             prevNode.setNext(nextNode);
             nextNode.setPrev(prevNode);
         }
-
-        DLLNode lastNode = tail.prev;
-        lastNode.setNext(node);
-        node.setPrev(lastNode);
-        node.setNext(tail);
-        tail.setPrev(node);
+        addToTail(node);
     }
 
     public void updateCache(int key, DLLNode node) {
@@ -89,14 +92,8 @@ public class LRUCache {
                 node = head;
             } else {
                 node = new DLLNode(key, value);
-                DLLNode lastNode = tail.prev;
-
-                lastNode.setNext(node);
-                node.setPrev(lastNode);
-                node.setNext(tail);
-                tail.setPrev(node);
+                addToTail(node);
             }
-
             cache.put(key, node);
             numOfNode++;
             if (numOfNode > capacity) {
