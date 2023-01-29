@@ -6,6 +6,7 @@ class Solution {
         if (x1 == x2) {
             return 1e5;
         }
+        // IMPORTANT: must cast to double, unless will be zero if smaller than 1
         return (double)(y2 - y1) / (x2 - x1);
     }
     
