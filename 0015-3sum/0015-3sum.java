@@ -26,15 +26,17 @@ class Solution {
 
         List<List<Integer>> tempAns = new ArrayList<>();
         for (int i = 0; i < n - 1 && nums[i] <= 0; ++i) {
-            if (i != 0 && nums[i - 1] == nums[i]) continue;
-            int target = -nums[i];
-            List<Integer> triplet;
-            for (List pair: twoSum(nums, i + 1, target)) {
-                triplet = new ArrayList<>();
-                triplet.add(-target);
-                triplet.addAll(pair);
-                tempAns.add(triplet);
+            if (i == 0 || nums[i - 1] != nums[i]) {
+                int target = -nums[i];
+                List<Integer> triplet;
+                for (List pair: twoSum(nums, i + 1, target)) {
+                    triplet = new ArrayList<>();
+                    triplet.add(-target);
+                    triplet.addAll(pair);
+                    tempAns.add(triplet);
+                }
             }
+            
         }
         List<List<Integer>> ans = new ArrayList<>();
         HashMap<List<Integer>, Boolean> existed = new HashMap<>();
