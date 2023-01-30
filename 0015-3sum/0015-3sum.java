@@ -26,6 +26,7 @@ class Solution {
 
         List<List<Integer>> tempAns = new ArrayList<>();
         for (int i = 0; i < n - 1 && nums[i] <= 0; ++i) {
+            if (i != 0 && nums[i - 1] == nums[i]) continue;
             int target = -nums[i];
             List<Integer> triplet;
             for (List pair: twoSum(nums, i + 1, target)) {
