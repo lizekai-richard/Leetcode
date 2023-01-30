@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="" />
+    <list default="true" id="39873e0d-1250-4401-8f5c-15765a18b30a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/0212-word-search-ii/NOTES.md" beforeDir="false" afterPath="$PROJECT_DIR$/0212-word-search-ii/NOTES.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +70,7 @@
       <workItem from="1671689684887" duration="598000" />
       <workItem from="1671935247518" duration="997000" />
       <workItem from="1672383352988" duration="4000" />
+      <workItem from="1675077268397" duration="9000" />
     </task>
     <servers />
   </component>
