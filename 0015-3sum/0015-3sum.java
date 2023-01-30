@@ -25,7 +25,7 @@ class Solution {
         Arrays.sort(nums);
 
         List<List<Integer>> tempAns = new ArrayList<>();
-        for (int i = 0; i < n - 1; ++i) {
+        for (int i = 0; i < n - 1 && nums[i] <= 0; ++i) {
             int target = -nums[i];
             List<Integer> triplet;
             for (List pair: twoSum(nums, i + 1, target)) {
