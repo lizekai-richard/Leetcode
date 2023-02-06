@@ -1,9 +1,12 @@
 class Solution {
+    private boolean[] visited;
+    private int[][] dp;
+    private List<Integer>[] adj;
     public int largestPathValue(String colors, int[][] edges) {
         if(edges.length == 0) 
             return 1;
         
-        List<Integer>[] adj = new List[colors.length()];
+        adj = new List[colors.length()];
         for(int[] edge: edges) {
             if(adj[edge[0]] == null) {
                 adj[edge[0]] = new ArrayList<>();
@@ -12,13 +15,13 @@ class Solution {
             adj[edge[0]].add(edge[1]);
         }
         
-        boolean[] visited = new boolean[colors.length()];
-        int[][] dp = new int[colors.length()][26]; 
+        visited = new boolean[colors.length()];
+        dp = new int[colors.length()][26]; 
         
         int max = 0;
         for(int i = 0; i < colors.length(); i++) {
             if(!visited[i]) {
-                if(dfs(colors, visited, dp, new boolean[colors.length()], adj, i)) {
+                if(dfs(colors, new boolean[colors.length()], i)) {
                     return -1;
                 }
                 
@@ -36,10 +39,7 @@ class Solution {
     // return true if cycle detected.
     private boolean dfs(
         String colors, 
-        boolean[] visited, 
-        int[][] dp, 
         boolean[] inStack,
-        List<Integer>[] adj,
         int node
     ) {
         
@@ -56,7 +56,7 @@ class Solution {
         
         if(adj[node] != null) {
             for(int nbr: adj[node]) {
-                if(dfs(colors, visited, dp, inStack, adj, nbr)) {
+                if(dfs(colors, inStack, nbr)) {
                     return true;
                 }
 
