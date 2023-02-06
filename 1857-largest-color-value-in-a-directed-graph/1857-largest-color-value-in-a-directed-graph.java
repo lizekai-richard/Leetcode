@@ -15,15 +15,18 @@ class Solution {
         }
         visited[u] = true;
         inStack[u] = true;
-        if (adjList.containsKey(u)) {
-            List<Integer> neighbors = adjList.get(u);
-            for (int v: neighbors) {
-                if (dfs(v)) {
-                    return true;
-                }
-                for (int c = 0; c < 26; ++c) {
-                    dp[u][c] = Math.max(dp[u][c], dp[v][c]);
-                }
+        if (!adjList.containsKey(u)) {
+            dp[u][nodeColor[u]]++;
+            inStack[u] = false;
+            return false;
+        }
+        List<Integer> neighbors = adjList.get(u);
+        for (int v: neighbors) {
+            if (dfs(v)) {
+                return true;
+            }
+            for (int c = 0; c < 26; ++c) {
+                dp[u][c] = Math.max(dp[u][c], dp[v][c]);
             }
         }
         dp[u][nodeColor[u]]++;
@@ -50,7 +53,6 @@ class Solution {
         visited = new boolean[n];
         inStack = new boolean[n];
         Arrays.fill(visited, false);
-        
         for (int i = 0; i < n; ++i){
             if (!visited[i]) {
                 Arrays.fill(inStack, false);
