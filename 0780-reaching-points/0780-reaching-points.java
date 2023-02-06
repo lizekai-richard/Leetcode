@@ -1,22 +1,23 @@
 class Solution {
     public boolean reachingPoints(int sx, int sy, int tx, int ty) {
-        while (tx >= sx && ty >= sy) {
-            if (tx == ty) break;
-            if (tx > ty) {
-                if (ty > sy) {
-                    tx = tx % ty;
-                } else {
-                    return (tx - sx) % ty == 0;
-                }
+        if (tx < sx || ty < sy) {
+            return false;
+        }
+        while (tx > sx && ty > sy) {
+            if (tx >= ty) {
+                tx = tx % ty;
             } else {
-                if (tx > sx) {
-                    ty = ty % tx;
-                } else {
-                    return (ty - sy) % tx == 0;
-                }
+                ty = ty % tx;
             }
         }
-        return tx == sx && ty == sy;
-        
+        if (tx != sx && ty != sy) {
+            return false;
+        } else if (tx == sx) {
+            return (ty - sy) % tx == 0;
+        } else if (ty == sy) {
+            return (tx - sx) % ty == 0;
+        } else {
+            return true;
+        }
     }
 }
