@@ -16,31 +16,29 @@ class Solution {
             }
         }
         
+        Queue<int[]> q = new LinkedList<>();
+        boolean[][] visited = new boolean[m][n];
         for (int[] gate: gates) {
-            Queue<int[]> q = new LinkedList<>();
-            boolean[][] visited = new boolean[m][n];
+            visited[gate[0]][gate[1]] = true;
             q.add(gate);
-            boolean flag = false;
-            while (!q.isEmpty()) {
-                int[] cur = q.poll();
-                int curx = cur[0];
-                int cury = cur[1];
-                for (int i = 0; i < 4; ++i) {
-                    int newx = curx + dx[i];
-                    int newy = cury + dy[i];
-                    if (newx < 0 || newy < 0 || newx >= m || newy >= n) continue;
-                    if (rooms[newx][newy] == -1) continue;
-                    if (!visited[newx][newy]) {
-                        if (rooms[newx][newy] > rooms[curx][cury] + 1) {
-                            rooms[newx][newy] = rooms[curx][cury] + 1;
-                            visited[newx][newy] = true;
-                            q.add(new int[]{newx, newy});
-                        }
-                    }  
-                }
-                // if (flag) {
-                //     break;
-                // }
+        }
+        
+        while (!q.isEmpty()) {
+            int[] cur = q.poll();
+            int curx = cur[0];
+            int cury = cur[1];
+            for (int i = 0; i < 4; ++i) {
+                int newx = curx + dx[i];
+                int newy = cury + dy[i];
+                if (newx < 0 || newy < 0 || newx >= m || newy >= n) continue;
+                if (rooms[newx][newy] == -1) continue;
+                if (!visited[newx][newy]) {
+                    if (rooms[newx][newy] > rooms[curx][cury] + 1) {
+                        rooms[newx][newy] = rooms[curx][cury] + 1;
+                        visited[newx][newy] = true;
+                        q.add(new int[]{newx, newy});
+                    }
+                }  
             }
         }
     }
