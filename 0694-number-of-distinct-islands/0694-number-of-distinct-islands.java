@@ -53,25 +53,6 @@ class Solution {
             }
         }
         
-        // int count = 0;
-        // HashMap<Integer, Boolean> exists = new HashMap<>();
-        // for (int i = 0; i < islands.size(); ++i) {
-        //     List<Pair<Integer, Integer>> island1 = islands.get(i);
-        //     int h1 = island1.hashCode();
-        //     if (!exists.containsKey(h1)) {
-        //         exists.put(h1, true);
-        //         count++;
-        //     }
-        //     for (int j = i + 1; j < islands.size(); ++j) {
-        //         List<Pair<Integer, Integer>> island2 = islands.get(j);
-        //         if (island1.size() != island2.size()) continue;
-        //         int h2 = island2.hashCode();
-        //         if (!exists.containsKey(h2)) {
-        //             exists.put(h2, true);
-        //             count++;
-        //         }
-        //     }
-        // }
         return islands.size();
     }
 }
