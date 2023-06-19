@@ -1,1 +1,7 @@
-​
+# Notes
+
+One can easily make a mistake which considers the recurrence relationship between $dp[i]$ and $dp[i-1]$ where $dp[i]$ represents the number of possible arrays of string $s[0\sim i]$. Why this is wrong? Let's use a simple example to elaborate. Consider $s=1234$ and $k=40$. For $dp[2]$, we know we can have $[1, 2, 3], [12, 3], [1, 23]$. Now consider $dp[3]$: can we simply say that since $34 \lt 40 = k$, we can concat $4$ right after $3$? No, we can't because that will result in $234$ which is invalid. Therefore, we can see that to determine whether a new character is concatable, it's not enough to only consider the character before it, which makes the whole solution wrong.
+
+Correct solution: we let `dp[i]` be the number of arrays for the prefix substring `s[0 ~ i]`, we will iterate over every index before getting `dp[m - 1]`. Suppose we have found `dp[start - 1]`. Then we move on to the index `start` and iterate for the ending index `end` and check if the integer made of `s[start ~ end]` is valid. If `s[start ~ end]` represents a valid integer, it means every valid array that can be printed as `s[0 ~ start - 1]` can also be printed as `s[0 ~ end]` by appending the integer `s[start ~ end]`, so we increment `dp[end]` by `dp[start - 1]`.
+
+<img src="NOTES.assets/Screenshot 2023-06-19 at 7.03.38 PM.png" alt="Screenshot 2023-06-19 at 7.03.38 PM" style="zoom:50%;" />
