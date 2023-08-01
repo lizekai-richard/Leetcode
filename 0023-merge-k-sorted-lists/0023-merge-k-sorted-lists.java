@@ -59,17 +59,11 @@ class Solution {
     }
     public ListNode mergeKLists(ListNode[] lists) {
         int n = lists.length;
+        this.lists = lists;
         if (n == 0) {
             return null;
         }
         
-        int interval = 1;
-        while (interval < n) {
-            for (int i = 0; i + interval < n; i += 2 * interval) {
-                lists[i] = merge(lists[i], lists[i + interval]);
-            }
-            interval *= 2;
-        }
-        return lists[0];
+        return divide_and_conquer(0, n - 1);
     }
 }
